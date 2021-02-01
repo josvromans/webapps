@@ -1,7 +1,7 @@
 # Triangle Subdivision - Desktop Browser App
 You can play with this app in your web browser, preferably on a laptop / desktop:
 
-https://josvromans.github.io/trianglesubdivision/
+https://josvromans.github.io/webapps/
 
 This type of triangle subdivision is explained on my website:
 https://josvromans.com/blog/2021/1/triangle-subdivisions/

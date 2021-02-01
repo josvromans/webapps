@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Symmetric Triangle Subdivisions</title>
+
+    <link rel="stylesheet" type="text/css" href="subdivision.css">
+    <script src="subdivision.js"></script>
+</head>
+<body>
+    <div class="menu">
+         <div>Background:</div>
+        <input id="background_color" name="Background Color Picker" type="color" value="#FFFFFF"/>
+
+        <div>Line Color:</div>
+        <input id="current_color" name="Color Picker" type="color" value="#000"/>
+
+        <div>Strategy:</div>
+        <input id="strategy" value="120">
+
+        <div>Interations:</div>
+        <input type="number" placeholder="10" step="1" min="1" max="20" value="10" id="iterations">
+
+        <div>Divisor:</div>
+        <input type="number" placeholder="2.00" step="0.01" min="0.01" max="10" value="2" id="divisor">
+
+        <div class="buttons">
+            <button id="start" title="Generate the subdivision. Keyboard shortcut: <ENTER>">Start</button>
+            <button id="clear" title="Clear the canvas. Keyboard shortcut: <C>">Clear</button>
+            <button id="download" title="Save the current canvas as a png image.">Download result</button>
+
+        </div>
+        <a id="link"></a>
+    </div>
+    <div style="width: 100%;">
+        <canvas id="canvas"></canvas>
+    </div>
+
+</body>
+</html>
