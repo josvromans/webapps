@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Chaos Game</title>
+
+    <link rel="stylesheet" type="text/css" href="chaosgame.css">
+    <script src="chaosgame.js"></script>
+</head>
+<body>
+    <div class="menu">
+         <div>Background:</div>
+        <input id="background_color" name="Background Color Picker" type="color"/>
+
+        <div>Color:</div>
+        <input id="current_color" name="Color Picker" type="color" value="#FFFFFF"/>
+
+        <div>Switch:</div>
+        <input id="switch_poly" value="20">
+
+        <div>Divisor:</div>
+        <input type="number" placeholder="2.00" step="0.01" min="0.01" max="10" value="2" id="divisor">
+
+        <label for="switch-strategy">Strategy:</label>
+        <select name="switch-strategy" id="switch-strategy">
+            <option value="random">random</option>
+            <option value="next">next</option>
+        </select>
+
+        <div class="buttons">
+<!--            <a href="chaos_game.html">click here</a>-->
+            <button id="add_polygon" title="Make a polygon of all the points that were clicked so far. Keyboard shortcut: <SPACE>">Add Polygon</button>
+            <button id="start" title="Start the Chaos Game. Keyboard shortcut: <ENTER>">Start</button>
+            <button id="clear" title="Clear the canvas. Keyboard shortcut: <C>">Clear</button>
+        </div>
+    </div>
+
+    <canvas id="canvas"></canvas>
+</body>
+</html>
