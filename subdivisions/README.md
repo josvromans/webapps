@@ -27,7 +27,7 @@ Download button downloads the current result in the canvas, and saves it as a .p
 
 When you add the strategy in the url, that subdivision will be rendered on page load.You can add the strategy in the url
 For example:
-https://josvromans.github.io/webapps/subdivisions/app.html?=strategy=0120120 will create the same image as in the image above.
+https://josvromans.github.io/webapps/subdivisions/app.html?strategy=0120110 will create the same image as in the image above.
 
 **Controls**
 
