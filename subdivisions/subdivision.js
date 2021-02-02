@@ -76,9 +76,9 @@ function triangle_subdivision(ctx, canvas){
     // add the 4 triangles that form a square, and share a vertex in the center of the square
     // calculations will be done for every triangle individually..
     subdivide_and_draw(ctx, [center, bottom_left, bottom_right], 0);
-    subdivide_and_draw(ctx, [center, top_left, top_right], 0);
+    subdivide_and_draw(ctx, [center, top_right, top_left], 0);
     subdivide_and_draw(ctx, [center, bottom_left, top_left], 0);
-    subdivide_and_draw(ctx, [center, bottom_right, top_right], 0);
+    subdivide_and_draw(ctx, [center, top_right, bottom_right], 0);
 }
 
 
