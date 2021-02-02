@@ -1,7 +1,7 @@
 # Triangle Subdivision - Desktop Browser App
 You can play with this app in your web browser, preferably on a laptop / desktop:
 
-https://josvromans.github.io/webapps/
+https://josvromans.github.io/webapps/subdivisions/app.html
 
 This type of triangle subdivision is explained on my website:
 https://josvromans.com/blog/2021/1/triangle-subdivisions/
@@ -26,8 +26,8 @@ The strategy is described in the article mentioned before. With this strategy, y
 Download button downloads the current result in the canvas, and saves it as a .png
 
 When you add the strategy in the url, that subdivision will be rendered on page load.You can add the strategy in the url
-For example 
-https://josvromans.github.io/webapps/subdivisions/triangle_subdivision.html?=strategy=0120120 will create the same image as in the image above.
+For example:
+https://josvromans.github.io/webapps/subdivisions/app.html?=strategy=0120120 will create the same image as in the image above.
 
 **Controls**
 

@@ -1,8 +1,7 @@
 # Chaos Game - Desktop Browser App
 You can play with this app in your web browser, preferably on a laptop / desktop:
 
-https://josvromans.github.io/chaosgame/
-
+https://josvromans.github.io/webapps/webchaos/app.html
 
 In addition to the regular Chaos Game (<a href="https://www.youtube.com/watch?v=kbKtFN71Lfs">explanation on YouTube</a>),
 you can add several polygons / lines / points that interplay with each other.
