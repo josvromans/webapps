@@ -1,6 +1,6 @@
 # Desktop Browser Apps
 
-In this repo you will find a few single page javascript apps. 
+In this repository you will find a few single page javascript apps. 
 They can be viewed in a browser (preferably on a laptop / desktop) here:
 
 https://josvromans.github.io/webapps/
