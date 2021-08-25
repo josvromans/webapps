@@ -1,3 +1,5 @@
+// License: CC BY-NC 4.0
+// Created by: www.josvromans.com
 var polygon_list = [];
 var temp_coordinates_list = [];
 var colors = [];

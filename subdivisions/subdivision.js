@@ -1,3 +1,5 @@
+// License: CC BY-NC 4.0
+// Created by: www.josvromans.com
 function draw_polygon(ctx, vertex_list, color){
     ctx.beginPath();
     for (var item=0; item<vertex_list.length ; item+=1 ){

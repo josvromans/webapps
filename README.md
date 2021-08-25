@@ -16,3 +16,7 @@ https://josvromans.github.io/webapps/subdivisions/app.html
 https://josvromans.github.io/webapps/webchaos/app.html
 
 [Read the README here](webchaos/README.md)
+
+
+## License
+CC BY-NC 4.0
