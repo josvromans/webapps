@@ -8,13 +8,14 @@ function draw_polygon(ctx, vertex_list, color){
 
     ctx.closePath();
     ctx.strokeStyle = color;
-    ctx.lineWidth = 1;
     ctx.stroke();
 }
 
+LINE_COLOR = '#000';
 
 function clear_canvas(ctx, canvas){
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = document.getElementById('background_color').value;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
 
 
@@ -39,19 +40,17 @@ function parse_strategy(strategy_string){
     return strategy;
 }
 
-
 function triangle_subdivision(ctx, canvas){
     var iterations = document.getElementById('iterations').value;
     var strategy = parse_strategy(document.getElementById('strategy').value);
 
     clear_canvas(ctx, canvas);
-    var bg_color = document.getElementById('background_color').value;
-    canvas.style.backgroundColor = bg_color;
-
     var divisor = parseFloat(document.getElementById('divisor').value);
     var color = document.getElementById('current_color').value;
+    var line_width = document.getElementById('line_width').value;
 
     function subdivide_and_draw(ctx, vertices, i){
+        ctx.lineWidth = line_width;
         var strategy_length = strategy.length;
         if (i < iterations) {
 
@@ -83,6 +82,14 @@ function triangle_subdivision(ctx, canvas){
     subdivide_and_draw(ctx, [center, top_right, bottom_right], 0);
 }
 
+function get_random_strategy(){
+    let strategy = '0';
+    for (let i=0;i<2+Math.random()*15;i++){
+        let random_index = Math.random()*3|0;
+        strategy += random_index.toString();
+    }
+    return strategy;
+}
 
 document.addEventListener('DOMContentLoaded', function(event) {
     var canvas = document.getElementById('canvas');
@@ -107,6 +114,10 @@ document.addEventListener('DOMContentLoaded', function(event) {
         link.setAttribute('href', canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"));
         link.click();
     });
+    document.getElementById('random').addEventListener("mouseup", function() {
+        document.getElementById('strategy').value = get_random_strategy();
+        triangle_subdivision(ctx, canvas);
+    });
 
     document.addEventListener('keydown', function(event) {
         if (event.keyCode === 13) {triangle_subdivision(ctx, canvas);}  // Enter
@@ -119,6 +130,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
     if (splitted.length === 2) {
         document.getElementById('strategy').value = splitted[1];
-        triangle_subdivision(ctx, canvas);
     }
+    triangle_subdivision(ctx, canvas);
 });
