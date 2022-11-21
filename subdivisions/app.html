@@ -16,16 +16,20 @@
         <input id="current_color" name="Color Picker" type="color" value="#000"/>
 
         <div>Strategy:</div>
-        <input id="strategy" value="120">
+        <input id="strategy" value="0120110">
+
+        <div>Line Width:</div>
+        <input type="number" placeholder=".45" step=".01" min=".01" max="9" value=".45" id="line_width">
 
         <div>Interations:</div>
-        <input type="number" placeholder="10" step="1" min="1" max="20" value="10" id="iterations">
+        <input type="number" placeholder="10" step="1" min="1" max="20" value="11" id="iterations">
 
         <div>Divisor:</div>
         <input type="number" placeholder="2.00" step="0.01" min="0.01" max="10" value="2" id="divisor">
 
         <div class="buttons">
-            <button id="start" title="Generate the subdivision. Keyboard shortcut: <ENTER>">Start</button>
+            <button id="start" title="Generate the subdivision. Keyboard shortcut: <ENTER>">Generate</button>
+            <button id="random" title="Re-generate with a random strategy.">Random</button>
             <button id="clear" title="Clear the canvas. Keyboard shortcut: <C>">Clear</button>
             <button id="download" title="Save the current canvas as a png image.">Download result</button>
         </div>
